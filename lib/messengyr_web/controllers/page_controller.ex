@@ -6,4 +6,8 @@ defmodule MessengyrWeb.PageController do
     # so skip the default app layout.
     render(conn, :home, layout: false)
   end
+
+  def say_hello(conn, _params) do
+    text conn, "Hello!"
+  end
 end
