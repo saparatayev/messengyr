@@ -11,8 +11,19 @@
     <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
     </script>
   </head>
-  <body class="bg-white antialiased">
-    <h1>Hello world</h1>
-    <%= @inner_content %>
+  <body class={@conn.path_info}>
+    <div class="container">
+
+      <!-- Add this header: -->
+      <header>
+        <.link href={~p"/"}>Home</.link>
+        <.link href={~p"/login"}>Login</.link>
+      </header>
+
+      <main role="main">
+        <.flash_group flash={@flash} />
+        <%= @inner_content %>
+      </main>
+    </div>
   </body>
 </html>

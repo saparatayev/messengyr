@@ -10,4 +10,12 @@ defmodule MessengyrWeb.PageController do
   def say_hello(conn, _params) do
     text conn, "Hello!"
   end
+
+  def signup(conn, _params) do
+    render(conn)
+  end
+
+  def login(conn, _params) do
+    render(conn)
+  end
 end

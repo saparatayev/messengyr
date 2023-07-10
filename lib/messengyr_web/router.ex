@@ -19,6 +19,8 @@ defmodule MessengyrWeb.Router do
 
     get "/", PageController, :home
     get "/test", PageController, :say_hello
+    get "/signup", PageController, :signup
+    get "/login", PageController, :login
   end
 
   # Other scopes may use custom stacks.
