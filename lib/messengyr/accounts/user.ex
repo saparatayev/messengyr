@@ -1,4 +1,4 @@
-defmodule Messengyr.User do
+defmodule Messengyr.Accounts.User do
   use Ecto.Schema
   import Ecto.Changeset
 
